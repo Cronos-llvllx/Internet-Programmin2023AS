@@ -4,84 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipo 6</title>
+    <title>Agenda Cucei</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-
-<script type="text/javascript">
-    var imgs1 = new Array("imagenes/imagen_cucei (1).jpg","imagenes/imagen_cucei (2).jpg","imagenes/imagen_cucei (1).png");
-    var lnks1 = new Array("http://www.google.com","http://www.convergepoint.com/","http://www.washingtonpost.com/?reload=true");
-    var alt1 = new Array("Blue hills","Sunset","Water lilies");
-    var currentAd1 = 0;
-    var imgCt1 = 3;
-    function cycle1() {
-      if (currentAd1 == imgCt1) {
-        currentAd1 = 0;
-      }
-    var banner1 = document.getElementById('adBanner1');
-    var link1 = document.getElementById('adLink1');
-      banner1.src=imgs1[currentAd1]
-      banner1.alt=alt1[currentAd1]
-      document.getElementById('adLink1').href=lnks1[currentAd1]
-      currentAd1++;
-      rotate();
-    }
-    function rotate()
-    {
-    setTimeout("cycle1()",3000);
-    }
-    </script>
-<body onload="rotate()">
-    
-    
-
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo nav-link" ><img src="/LogoCucei.svg" alt="Logo" width="100px" height="90px"></a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+            <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">Inicio</a>
+            </li>
+            <li class="nav-menu-item">
+            <a href="news.html" class="nav-menu-link nav-link">Noticias</a>
+            </li>
+            <li class="nav-menu-item">
+            <a href="acerca.html" class="nav-menu-link nav-link">Acerca de nosotros</a>
+            </li>
+            <li class="nav-menu-item">
+            <a href="Registrate.html" class="nav-menu-link nav-link nav-menu-link_active"
+                >Registrate</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="iniciodesesion.html" class="nav-menu-link nav-link nav-menu-link_active"
+                    >Inicio de sesion</a>
+                </li>
+        </ul>
+        </nav>
+    </header>
+    <body>
+        <div class="centered">
+            <img src="imagenes/banner1.jpg" id="adBanner" alt="Ad Banner">
+            
+        </div>
+    </body>
     <div class="contenedor0">
         
         <div class="contenedor1">
-            <h1>Agenda tus materias CUCEI</h1>
-            <h5>Arma tu horario</h5>
-            <!--<form action="">
+            <h1>Te ayudamos a hacer el registro de materias.</h1>
+            <h5>Únete a nosotros y tendrás sugerencias de agenda materias a tus necesidades.</h5>
+            <form action="">
                 <input type="text" placeholder="enter your e-mail">
-                <button type="button" name="Buscar materias">
-                    Buscar materias
+                <button type="button" name="Join our waitlist">
+                    Crea tu cuenta
                 </button>
-            </form>-->
+            </form>
         </div>
-        <a href="http://www.google.com" id="adLink1" target="_top"></a>
-        <img src="imagenes/imagen_cucei (1).jpg" id="adBanner1" border="0" width="500" height="350">
+        <img src="img0.jpg" alt="" class="imagen">
     </div>
-    <br><br><br>
     <div class="contenedor0">
-        <img src="imagenes/estudiantes.jpg" alt="" class="imagen">
+        <img src="img2.jpg" alt="" class="imagen">
         <div class="contenedor1">
-            <h2>Encuentra las mejores secciones</h2>
-            <h5>Crea tu horario que se adapte a tus tiempos y tus necesidades</h5>
+            <h2>Get tailored advice</h2>
+            <h5>With SchedulingScout, you can get tailored advice on scheduling, subjects, professors and more. We'll provide personalized recommendations that best suit your needs.</h5>
         </div>
     </div>
-    <!--<div class="contenedor0">
+    <div class="contenedor0">
         <img src="img1.jpg" alt="" class="imagen">
         <div class="contenedor1">
             <h2>Choose your route.</h2>
             <h5>We provide detailed maps and routes to get to CU quickly and efficiently. Whether you're on bike, car or public transport, you can get to your class on time.</h5>
         </div>
-    </div>-->
+    </div>
 
     <div class="contenedor_footer">
-        <h3>"Gracias a Mi Horario CUCEI pude armar mi horario perfecto"</h3>
+        <h3>"Thanks to SchedulingScout, I was able to get the classes I wanted and save time."</h3>
     </div>
 
     <div class="joinus">
-        <h3>¡Crea tu cuenta y arma tu horario ideal para el siguiente semestre!</h3>
+        <h3>Join our community of fans that love SchedulingScout.</h3>
         <form action="">
-            Nombre
-            <input type="text" name="name"><br><br>
-            E-mail
-            <input type="email" name="mail" id=""><br><br>
-            Título
-            <input type="text" name="titulo"><br><br>
-            Mensaje
-            <input type="text" name="mensaje" id=""><br><br>
-            <input type="submit">
+            <input type="text">
+            <input type="button" name="Join our waitlist" value="Join our waitlist">
         </form>
     </div>
 </body>
