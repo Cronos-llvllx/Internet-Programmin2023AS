@@ -1,7 +1,7 @@
 window.onload = rotate;
 
 var theAd = 0;
-var adImages = new Array("imagenes/banner1.jpg","imagenes/banner2.jpg","imagenes/banner3.jpg");
+var adImages = new Array("imagenes/banner1.png","imagenes/Banner2.png","imagenes/Banner3.jpg");
 
 function rotate() {
     theAd++;
