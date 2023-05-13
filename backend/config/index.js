@@ -1,8 +1,8 @@
 import { config } from "dotenv";
-import bddcptconfig from './bddcptconfig.js';
+import bddconfig from './bddconfig.js';
 config();
 
 export default {
   port: process.env.PORT || 4000,
-  bddcptconfig:bddcptconfig
+  bddconfig:bddconfig
 };

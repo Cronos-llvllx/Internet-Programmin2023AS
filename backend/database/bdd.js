@@ -2,14 +2,14 @@ import config from '../config/index.js';
 import sql from 'mssql';
 
 
-const bddcptconfig = config.bddcptconfig;
+const bddconfig = config.bddconfig;
 
 //se crea un objeto con la configuracion
 var dbSettings1 =  {
-    user: bddcptconfig.dbUser,
-    password: bddcptconfig.dbPassword,
-    server: bddcptconfig.dbServer,
-    database: bddcptconfig.bdd,
+    user: bddconfig.dbUser,
+    password: bddconfig.dbPassword,
+    server: bddconfig.dbServer,
+    database: bddconfig.bdd,
     options: {
         encrypt: false,
         trustServerCertificate: false,
@@ -17,7 +17,7 @@ var dbSettings1 =  {
 }
 
 const client  = new sql.ConnectionPool(dbSettings1);
-clientP.connect(err => { console.log(err)});
+client.connect(err => { console.log(err)});
 
 
 export {client, sql/*clientCPEI*/}
